@@ -1,7 +1,14 @@
-# crispy-carnival
-🐍 🐍 🐍 
-These are my Python programs I did in college. I am adding programs from private repo so they
-do not delete but redacting names and personal info. These codes are kept the same way I did 
-it in college. Beware programs might be very messy. 😂 
+# College Python Projects
 
-Note: I will add more projects periodically 
+This repository contains Python assignments and small projects I completed during college.  
+They represent my early learning in programming, problem-solving, and working with Python.
+
+### What’s included
+- Intro-level Python exercises  
+- Small projects from various classes  
+- Early experiments with data structures and algorithms  
+
+### Notes
+- Code is preserved as originally written (messy but authentic!)  
+- Personal info and names have been removed  
+- More projects will be added periodically  
