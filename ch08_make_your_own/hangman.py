@@ -81,15 +81,15 @@ def pick_category():
     print(" 3. Movies")
 
     # input validation grabs from word_catagories list and picks random word from topics depending on which user chooses
-    while True:
+    # while True:
     # user_choice = int(input("Which category would you like?: ")) # creates key error when calling pick_category()
-        user_choice = input("Which category would you like?: ").strip() # strip cleans up invisible space that was crashing program
-        if user_choice in WORD_CATEGORIES:
-            category_data = WORD_CATEGORIES[user_choice]
-            word_list = category_data[1]
-            return random.choice(word_list)
+    user_choice = input("Which category would you like?: ").strip() # strip cleans up invisible space that was crashing program
+    while user_choice in WORD_CATEGORIES:
+        category_data = WORD_CATEGORIES[user_choice]
+        word_list = category_data[1]
+        return random.choice(word_list)
             # break
-        print("Invalid choice! Please enter 1, 2, or 3.")
+    print("Invalid choice! Please enter 1, 2, or 3.")
 
     # category_data = WORD_CATEGORIES[user_choice]
     # word_list = category_data[1]
@@ -117,7 +117,7 @@ def display_word(secret_word, guessed_letters):
 
 # function for input validation while user tries to guess a number or guesses the same letter and error message will show
 def get_guess(guessed_letters):
-    while True:
+    # while True:
         guess = input("Guess a letter: ").upper().strip() 
 
         if len(guess) != 1:
@@ -159,14 +159,14 @@ def play_game():
 play_game()
 
 # asks user if they want to play again if so function play_game() is called and restarts
-while True:
-   print(" ")
-   y_n = input("Would you like to play again (y/n)? ")
-   if y_n == 'y':
-      print(" ")
-      play_game()
-   elif y_n == 'n':
-      print(" ")
-      print("Thank you for playing!")
-      break
+# while True:
+print(" ")
+y_n = input("Would you like to play again (y/n)? ")
+if y_n == 'y':
+    print(" ")
+    play_game()
+elif y_n == 'n':
+    print(" ")
+    print("Thank you for playing!")
+    # break
    
