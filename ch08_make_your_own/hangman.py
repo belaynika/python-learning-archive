@@ -170,3 +170,4 @@ elif y_n == 'n':
     print("Thank you for playing!")
     # break
    
+# note: Instead of writing while True: "What's the condition that keeps this loop going?" and write directly in the while line.
